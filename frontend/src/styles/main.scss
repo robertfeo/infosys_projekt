@@ -1,0 +1,95 @@
+@import './variables.scss';
+
+body {
+  min-height: 100vh;
+  margin: 0;
+  margin-bottom: 25px;
+  background-color: $color-secondary;
+  color: $color-prime;
+}
+
+main {
+  margin: 10px 25px;
+  color: $color-prime;
+
+  h3 {
+    color: $color-accent-1 !important;
+  }
+
+  h5 {
+    color: $color-accent-2 !important;
+  }
+
+  .breadcrumb {
+    .breadcrumb-item {
+      a {
+        color: $color-accent-3;
+        text-decoration: none;
+      }
+    }
+
+    .breadcrumb-item.active {
+      color: $color-accent-2;
+    }
+  }
+
+  .highlight-1 {
+    color: $color-accent-1;
+  }
+
+  .highlight-2 {
+    color: $color-accent-2;
+  }
+
+  .highlight-3 {
+    color: $color-accent-3;
+  }
+
+  .highlight-4 {
+    color: $color-accent-4;
+  }
+
+  .header-btn {
+    max-width: 100%;
+  }
+
+  .btn-primary {
+    background-color: $color-accent-1;
+    border-radius: 0;
+    border-color: $color-accent-1;
+
+    &:hover {
+      background-color: $color-secondary;
+      color: $color-accent-1;
+      border-color: $color-accent-1;
+    }
+
+    &:disabled {
+      background-color: rgb($color-accent-1, 0.5);
+      border-color: rgb($color-accent-1, 0.5);
+    }
+  }
+
+  .accordion {
+    box-shadow: 1px 1px 4px $color-prime;
+
+    .accordion-item {
+      .accordion-button {
+        color: $color-accent-1;
+
+        &:not(.collapsed) {
+          background-color: $color-accent-4;
+        }
+      }
+
+      .table-striped > tbody > tr:nth-of-type(2n + 1) > * {
+        background-color: rgb($color-accent-4, 0.3);
+      }
+
+      .table-hover > tbody > tr:hover > * {
+        background-color: $color-accent-4;
+      }
+    }
+  }
+
+}
