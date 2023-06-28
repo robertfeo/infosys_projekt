@@ -1,4 +1,4 @@
-# Information Systems S2023 Lab - Group 2
+# Information Systems SS2023 Lab - Group 2
 
 ## Introduction
 
